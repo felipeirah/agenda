@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="cabecalho">AGENDA DE CONTATOS</header>
+    <div class="container">
+        <div class="form-box">
+            <div class="logo">
+                <img src="usuario_icone.avif" alt="Logo">
+            </div>
+            <input type="email" id="usuario" placeholder="Usuário" required>
+            <input type="password" id="senha" placeholder="Senha" required>
+            <button onclick="login()">ENTRAR</button>
+        </div>
+    </div>
+
+    <script>
+        function login() {
+            const usuario = document.getElementById('usuario').value;
+            const senha = document.getElementById('senha').value;
+
+            if (usuario === 'admin' && senha === 'admin') {
+                alert('Login bem-sucedido!');
+                window.location.href = 'tela2.html'; // Redireciona para a página de cadastro de contatos
+            } else {
+                alert('Usuário ou senha incorretos!');
+            }
+        }
+    </script>
+</body>
+</html>

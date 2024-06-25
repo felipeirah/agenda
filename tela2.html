@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Contato</title>
+    <link rel="stylesheet" href="tela2.css">
+</head>
+<body>
+    <header class="cabecalho">Cadastro de Contato</header>
+    <div class="container">
+        <div class="form-box">
+            <div class="form-fields">
+                <input type="text" id="nome" placeholder="Nome" required>
+                <input type="text" id="sobrenome" placeholder="Sobrenome" required>
+                <input type="text" id="endereco" placeholder="Endereço" required>
+                <input type="text" id="telefone" placeholder="Telefone" required>
+            </div>
+            <div class="button-box">
+                <button class="incluir" onclick="incluirContato()">INCLUIR</button>
+                <button class="editar" onclick="editarContato()">EDITAR</button>
+                <button class="salvar" onclick="salvarContato()">SALVAR</button>
+                <button class="cancelar" onclick="cancelarEdicao()">CANCELAR</button>
+                <button class="excluir" onclick="excluirContato()">EXCLUIR</button>
+            </div>
+        </div>
+        <div class="nav-box">
+            <button class="nav" onclick="navegarParaPrimeiro()">&lt;&lt;</button>
+            <button class="nav" onclick="navegarParaAnterior()">&lt;</button>
+            <button class="nav" onclick="navegarParaProximo()">&gt;</button>
+            <button class="nav" onclick="navegarParaUltimo()">&gt;&gt;</button>
+        </div>
+    </div>
+    <footer class="rodape">AGENDA DE CONTATOS</footer>
+    <script src="script.js"></script>
+</body>
+</html>
